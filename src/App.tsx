@@ -1,7 +1,9 @@
+import { Button } from "antd";
+import { FC } from "react";
 import "./App.css";
 import logo from "./logo.svg";
 
-function App(): JSX.Element {
+const App: FC = () => {
   return (
     <div className="App">
       <header className="App-header">
@@ -10,6 +12,7 @@ function App(): JSX.Element {
         <p>
           Edit <code>src/App.js</code> and save to reload. 😱
         </p>
+        <Button type="dashed">Hello</Button>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -22,6 +25,6 @@ function App(): JSX.Element {
       </header>
     </div>
   );
-}
+};
 
 export default App;
